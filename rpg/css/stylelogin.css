@@ -11,7 +11,7 @@
 /* botão voltar */
 .button {
     --font-color: #2b134b;
-    --bg-color: #80ff88;
+    --bg-color: #70e884;
     --main-color: #fefefe;
     width: 100px;
     height: 40px;
@@ -36,7 +36,7 @@
     width: 100vw;
     /* vw porcentagem da largura da tela*/
     height: 100vh;
-    background: #2c1b1b;
+    background: #9899ed;
     /*Cor de fundo*/
     display: flex;
     justify-content: center;

@@ -156,7 +156,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="./assets/images/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                  <img src="imagem/VenciaCarnavon.png" width="450" height="600" loading="lazy"
                     alt="Personagem" class="img-cover">
                 </figure>
 

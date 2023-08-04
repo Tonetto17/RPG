@@ -591,6 +591,29 @@ body.color {
 
 /* Final */
 
+
+
+.button {
+    --font-color: #2b134b;
+    --bg-color: #80ff88;
+    --main-color: #fefefe;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
 /* Conteudo slider */
 
 ul {
@@ -614,7 +637,7 @@ main {
 
 .cartao-conteudo {
     background-color: #d8e3ec;
-    /* width: 200px; */
+    width: 200px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -684,46 +707,26 @@ main {
 
 *::-webkit-scrollbar {
     width: 12px;
-}
+  }
 
-*::-webkit-scrollbar-track {
+  *::-webkit-scrollbar-track {
     background: #f1e9e9;
-}
+  }
 
-*::-webkit-scrollbar-thumb {
-    background-color: #000000;
+  *::-webkit-scrollbar-thumb {
+    background-color: #582965;
     border-radius: 10px;
     border: 3px solid #ffffff;
-}
+  }
 @media screen and (max-width: 400px) {
     .cartao-conteudo{
-        
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
     }
 }
 
 /* Final */
-
-.button {
-    --font-color: #2b134b;
-    --bg-color: #80ff88;
-    --main-color: #fefefe;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--font-color);
-    cursor: pointer;
-}
-
-.button:active {
-    box-shadow: 0px 0px var(--main-color);
-    transform: translate(3px, 3px);
-}
-
 
 /* letra */
 

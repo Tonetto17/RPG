@@ -51,7 +51,7 @@
 <body class="body-login">
     <div class="main-login">
         <div class="left-login">
-            <img class="left-login-image" src="imagem/login-imagem.svg"  alt="imagem de uma pessoa">
+            <img class="left-login-image" src="imagem/castle-animate.svg"  alt="imagem de uma pessoa">
         </div>
         <form action="cadastro.php" method="post">
         <div class="right-login">

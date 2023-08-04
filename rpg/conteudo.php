@@ -10,6 +10,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/estiloconteudo.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <title>Conteudos</title>
@@ -68,7 +69,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo medieval">Medieval</li>
                 </ul>
-                <p class="descricao">Escrever aqui uma descrição</p>
+                <p class="descricao">Neste cenário repleto de maravilhas e desafios, aventure-se por florestas ancestrais, ruínas esquecidas e cidades majestosas em busca de tesouros lendários e poderosas relíquias. Forje alianças com companheiros de jornada, cada um com habilidades únicas, e juntos enfrentem ameaças sombrias que espreitam nos recantos mais obscuros</p>
                 <a href="medieval.php"><input class="button" type="button" value="Ver mais"></a>
 
 
@@ -77,12 +78,12 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="informacoes">
                     <span>Faroeste</span>
                 </div>
-                <img src="" alt="" class="gif">
+                <img src="imagem/dragao.gif" alt="" class="gif">
                 <ul class="tipos">
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo faroeste">Faroeste</li>
                 </ul>
-                <p class="descricao">Escrever aqui uma descrição</p>
+                <p class="descricao">Bem-vindo ao mundo implacável do Velho Oeste, onde homens valentes e mulheres destemidas se aventuram nas vastas terras selvagens, em busca de fama, fortuna e justiça. No horizonte, o sol escaldante banha as cidades empoeiradas, onde foras da lei tramam seus planos, e xerifes corajosos estão prontos para manter a ordem.</p>
                 <a href="faroeste.php"><input class="button" type="button" value="Ver mais"></a>
 
             </li>
@@ -95,14 +96,16 @@ $nomeusuario = $_SESSION['nomeusuario'];
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo futurista">Futurista</li>
                 </ul>
-                <p class="descricao">Escrever aqui uma descrição</p>
+                <p class="descricao">Prepare-se para mergulhar em um mundo onde os limites entre o humano e o artificial se desvaneceram, onde a jornada pela verdade e justiça irá desafiar sua perspectiva sobre o futuro da humanidade. Seja bem-vindo(a), suas escolhas definirão o futuro!</p>
                 <a href="futurista.php"><input class="button" type="button" value="Ver mais"></a>
 
             </li>
 
         </ul>
 
+        
     </main>
+    
     <script src="script/script.js"></script>
 </body>
 
