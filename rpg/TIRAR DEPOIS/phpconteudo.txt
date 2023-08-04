@@ -1,0 +1,19 @@
+ <div class="mobile-menu">
+            <ul>
+                
+
+                <?php
+                if($nomeusuario != null){
+                    ?>
+                    
+                    <li class="nav-item">Olá <?=strtoupper($nomeusuario)?></li>
+                    <?php
+                    
+                }else{
+                    echo"<script>window.alert('USUARIO NÃO AUTENTICADO'); window.location.href='login.php';</script>";
+                }
+                ?>
+                <li class="nav-item"><a href="logout.php">SAIR</a></li>
+            <ul>
+            
+        </div>

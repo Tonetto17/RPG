@@ -1,0 +1,24 @@
+## INICIO DO SCRIPT##
+
+#CRIA A BASE
+CREATE DATABASE rpg;
+USE rpg;
+
+##CRIA UMA TABELA DE USUARIOS
+CREATE TABLE usuarios(
+    usu_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    usu_nome VARCHAR(50) NOT NULL,
+    usu_email VARCHAR(50) NOT NULL,
+    usu_senha VARCHAR(50) NOT NULL,
+    usu_nivel CHAR(1) NOT NULL,
+    usu_ativo CHAR(1)
+    );
+    
+    
+
+INSERT INTO usuarios (usu_nome, usu_email, usu_senha, usu_nivel,  usu_ativo) VALUES ("administrador", "administrador@gmail.com", "123", "1", "s");
+    
+
+
+_____________________________________________________
+CREATE USER 'administrador'@'localhost' IDENTIFIED BY '123'; GRANT ALL PRIVILEGES ON *.* TO 'administrador'@'localhost'; FLUSH PRIVILEGES;
