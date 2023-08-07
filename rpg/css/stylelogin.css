@@ -8,35 +8,11 @@
     box-sizing: border-box;
 }
 
-/* botão voltar */
-.button {
-    --font-color: #2b134b;
-    --bg-color: #70e884;
-    --main-color: #fefefe;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--font-color);
-    cursor: pointer;
-}
-
-.button:active {
-    box-shadow: 0px 0px var(--main-color);
-    transform: translate(3px, 3px);
-}
-
-/* botão voltar */
-
 .main-login {
     width: 100vw;
     /* vw porcentagem da largura da tela*/
     height: 100vh;
-    background: #9899ed;
+    background: #6d213c;
     /*Cor de fundo*/
     display: flex;
     justify-content: center;
@@ -78,7 +54,7 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #e3c16f;
     /*Cor do quadrado do card do login*/
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
@@ -86,7 +62,7 @@
 }
 
 .card-login .h1-login {
-    color: #00ff88;
+    color: #6d213c;
     /*Cor do titulo do login*/
     font-weight: 800;
     margin: 0;
@@ -107,9 +83,9 @@
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
+    background: #6d213c;
     /*Cor do fundo do input*/
-    color: #f0ffffde;
+    color: #baab68;
     /*Cor da letra dentro do input*/
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
@@ -118,7 +94,7 @@
 }
 
 .textfield>label {
-    color: #f0ffffde;
+    color: #baab68;
     margin-bottom: 10px;
 }
 
@@ -136,11 +112,11 @@
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #2b134b;
+    color: #6d213c;
     /*Cor da letra dentro do botão*/
-    background: #80ff88;
+    background: #baab68;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #f7c31652;
     /*Cor da lateral do botão*/
 
 }

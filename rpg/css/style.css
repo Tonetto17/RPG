@@ -11,8 +11,8 @@
 
 :root {
     --text-color: #000000;
-    --bg-color: #e5e5e5;
-    --main-color: #f29494;
+    --bg-color: #e3c16f;
+    --main-color: #fefefe;
     --second-color: #fff;
     --big-font: 5.5rem;
     --p-font: 1rem:
@@ -208,7 +208,7 @@ section {
 
 body.color {
     --text-color: #fff;
-    --bg-color: #08162a;
+    --bg-color: #6d213c;
     --second-color: #2b3544;
 
 }
@@ -594,9 +594,9 @@ body.color {
 
 
 .button {
-    --font-color: #2b134b;
-    --bg-color: #80ff88;
-    --main-color: #fefefe;
+    --font-color: #e3c16f;
+    --bg-color: #6d213c;
+    --main-color: #e3c16f;
     width: 100px;
     height: 40px;
     border-radius: 5px;
@@ -630,14 +630,14 @@ main {
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
     justify-content: center;
 
 }
 
 .cartao-conteudo {
-    background-color: #d8e3ec;
-    width: 200px;
+    background-color: #f49f31;
+    width: 400px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -648,7 +648,7 @@ main {
 }
 
 .cartao-conteudo:hover {
-    background-color: #96d9d6;
+    background-color: #946846;
 }
 
 
@@ -666,8 +666,8 @@ main {
 }
 
 .cartao-conteudo .gif {
-    width: 90px;
-    height: 90px;
+    width: 200px;
+    height: 120px;
 }
 
 .cartao-conteudo .tipos {
@@ -681,7 +681,7 @@ main {
 }
 
 .rpg {
-    background-color: #7ac74c;
+    background-color: #f1d56e;
 }
 
 .medieval {

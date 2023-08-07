@@ -44,7 +44,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
   -->
 
   <header>
-    <a href="index.html" class="logo"><i class='bx bxs-dice-6'></i></i>RPG</a>
+  <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
@@ -120,19 +120,19 @@ $nomeusuario = $_SESSION['nomeusuario'];
             </li>
 
             <li class="brand-item">
-              <img src="./assets/images/brand-3.png" width="90" height="90" loading="lazy" alt="brand logo">
+              <img src="imagem/coroa.png" width="90" height="90" loading="lazy" alt="brand logo">
             </li>
 
             <li class="brand-item">
-              <img src="./assets/images/brand-4.png" width="90" height="90" loading="lazy" alt="brand logo">
+              <img src="imagem/dragao.png" width="90" height="90" loading="lazy" alt="brand logo">
             </li>
 
             <li class="brand-item">
-              <img src="./assets/images/brand-5.png" width="90" height="90" loading="lazy" alt="brand logo">
+              <img src="imagem/arqueiro.png" width="90" height="90" loading="lazy" alt="brand logo">
             </li>
 
             <li class="brand-item">
-              <img src="./assets/images/brand-6.png" width="90" height="90" loading="lazy" alt="brand logo">
+              <img src="imagem/escudo.png" width="90" height="90" loading="lazy" alt="brand logo">
             </li>
 
           </ul>
@@ -164,33 +164,33 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                   <h3 class="h3">
                     <a href="#" class="card-title" tabindex="-1">
-                      Personagem <span class="span">Personagem</span>
+                      Personagem <span class="span">Vencia Verão</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Herói</span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
 
-                  <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
                     class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
-                      Personagem <span class="span">Personagem</span>
+                      Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Herói</span>
                   </span>
 
                 </div>
@@ -202,7 +202,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="./assets/images/featured-game-2.jpg" width="450" height="600" loading="lazy"
+                  <img src="imagem/heroi2medieval.png" width="450" height="600" loading="lazy"
                     alt="Personagem" class="img-cover">
                 </figure>
 
@@ -210,33 +210,33 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                   <h3 class="h3">
                     <a href="#" class="card-title" tabindex="-1">
-                      Personagem <span class="span">Personagem</span>
+                      Personagem <span class="span">Blake Travis</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Herói</span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
 
-                  <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
                     class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
-                      Personagem <span class="span">Personagem</span>
+                      Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Herói</span>
                   </span>
 
                 </div>
@@ -248,7 +248,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="./assets/images/featured-game-3.jpg" width="450" height="600" loading="lazy"
+                  <img src="imagem/vilao1medieval.png" width="450" height="600" loading="lazy"
                     alt="Personagem" class="img-cover">
                 </figure>
 
@@ -256,33 +256,33 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                   <h3 class="h3">
                     <a href="#" class="card-title" tabindex="-1">
-                      Personagem<span class="span">Personagem</span>
+                      Personagem<span class="span">Meara Horrig</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Vilão</span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
 
-                  <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
                     class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
-                      Personagem <span class="span">Personagem</span>
+                      Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Vilão</span>
                   </span>
 
                 </div>
@@ -294,7 +294,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="./assets/images/featured-game-4.jpg" width="450" height="600" loading="lazy"
+                  <img src="imagem/vilao2medieval.png" width="450" height="600" loading="lazy"
                     alt="Personagem" class="img-cover">
                 </figure>
 
@@ -302,33 +302,33 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                   <h3 class="h3">
                     <a href="#" class="card-title" tabindex="-1">
-                      Personagem <span class="span">Personagem</span>
+                      Personagem <span class="span">Aela Hume</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Vilão</span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
 
-                  <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
                     class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
-                      Personagem <span class="span">Personagem</span>
+                      Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
-                    <span class="span">Personagem</span>
+                    <span class="span">Vilão</span>
                   </span>
 
                 </div>

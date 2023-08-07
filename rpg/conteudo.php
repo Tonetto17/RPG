@@ -18,7 +18,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
 <body>
     <header>
-        <a href="#" class="logo"><i class='bx bx-dice-6'></i> RPG</a>
+        <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
 
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>
@@ -64,7 +64,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="informacoes">
                     <span>Medieval</span>
                 </div>
-                <img src="imagem/gifs-de-rpg-30.gif" alt="" class="gif">
+                <img src="imagem/gifmedieval.gif" alt="" class="gif">
                 <ul class="tipos">
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo medieval">Medieval</li>
@@ -78,7 +78,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="informacoes">
                     <span>Faroeste</span>
                 </div>
-                <img src="imagem/dragao.gif" alt="" class="gif">
+                <img src="imagem/giffaroeste.gif" alt="" class="gif">
                 <ul class="tipos">
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo faroeste">Faroeste</li>
@@ -91,7 +91,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="informacoes">
                     <span>Futurista</span>
                 </div>
-                <img src="" alt="" class="gif">
+                <img src="imagem/giffuturismo.gif" alt="" class="gif">
                 <ul class="tipos">
                     <li class="tipo rpg">RPG</li>
                     <li class="tipo futurista">Futurista</li>
