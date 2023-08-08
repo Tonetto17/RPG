@@ -44,7 +44,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
   -->
 
   <header>
-  <a href="#" class="logo"><i class='bx bx-dice-6' ></i>PORTAL RPG</a>
+  <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
@@ -85,12 +85,12 @@ $nomeusuario = $_SESSION['nomeusuario'];
   <main>
     <article>
       <section class="section hero" id="home" aria-label="home"
-        style="background-image: url('imagem/medievalconteudo.png')">
+        style="background-image: url('imagem/cidadefaroeste.jpg')">
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">Medieval</p>
+            <p class="hero-subtitle">Faroeste</p>
 
             <h1 class="h1 hero-title">
               Sua jornada <span class="span">Começa </span> aqui

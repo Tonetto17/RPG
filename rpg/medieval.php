@@ -43,7 +43,8 @@ $nomeusuario = $_SESSION['nomeusuario'];
     - #HEADER
   -->
 
-  <header>
+  <header >
+    
   <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
@@ -78,6 +79,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
 
     </div><!--h-main-->
+    
   </header>
   <!--Cabeçalho-->
 
@@ -361,7 +363,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="#" width="300" height="260" loading="lazy" alt="Historia" class="img-cover">
+                  <img src="imagem/livro.jpg" width="300" height="260" loading="lazy" alt="Historia" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -387,7 +389,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="./assets/images/shop-img-2.jpg" width="300" height="260" loading="lazy" alt="Mapa"
+                  <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa"
                     class="img-cover">
                 </figure>
 
@@ -416,7 +418,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="./assets/images/shop-img-3.jpg" width="300" height="260" loading="lazy"
+                  <img src="imagem/Ficha01.jpg" width="300" height="260" loading="lazy"
                     alt="Programa de fichas" class="img-cover">
                 </figure>
 
@@ -445,7 +447,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="./assets/images/shop-img-4.jpg" width="300" height="260" loading="lazy" alt="Ficha fisica"
+                  <img src="imagem/Ficha02.jpg" width="300" height="260" loading="lazy" alt="Ficha fisica"
                     class="img-cover">
                 </figure>
 
