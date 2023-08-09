@@ -358,12 +358,12 @@ body.color {
     --rich-black-fogra-29_95: hsla(222, 18%, 11%, 0.95);
     --raisin-black-1: hsl(0, 0%, 16%);
     --raisin-black-2: hsl(236, 17%, 17%);
-    --raisin-black-3: hsl(280, 11%, 11%);
+    --raisin-black-3: #f8f4e3;
     --raisin-black-4: hsl(280, 8%, 15%);
     --english-violet: hsl(274, 21%, 23%);
     --eerie-black-1: hsl(277, 25%, 10%);
     --eerie-black-2: hsl(280, 7%, 8%);
-    --roman-silver: hsl(220, 6%, 59%);
+    --roman-silver: hsl(240, 100%, 0%);
     --quick-silver: hsl(0, 1%, 65%);
     --light-gray-1: hsl(0, 0%, 80%);
     --light-gray-2: hsl(0, 2%, 82%);
@@ -640,7 +640,7 @@ body.color {
   .w-100 { width: 100%; }
   
   .section-text {
-    color: var(--color, var(--light-gray-1));
+    color: #000000;
     font-size: var(--fs-8);
     font-weight: var(--fw-500);
     max-width: 65ch;
@@ -1376,7 +1376,7 @@ body.color {
   
   .footer-list-title {
     position: relative;
-    color: var(--silver);
+    color: #000000;
     font-family: var(--ff-oxanium);
     text-transform: uppercase;
     font-weight: var(--fw-800);
@@ -2024,3 +2024,9 @@ body.color {
     .footer .container { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
   
   }
+
+/* teste */
+.fundo{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
