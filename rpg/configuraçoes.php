@@ -31,12 +31,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    
+    <link rel="icon" href="icones/Castelologo.png">
     <title>Configurações</title>
 </head>
 <body>
 <header>
-        <a href="#" class="logo"><i class='bx bx-dice-6' ></i>RPG</a>
+    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
+
       
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>

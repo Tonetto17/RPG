@@ -46,6 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Final -->
+    <link rel="icon" href="icones/Castelologo.png">
     <title>Login</title>
 </head>
 
