@@ -115,6 +115,58 @@ section {
     padding: 10% 12%;
 
 }
+.txt-per {
+    color: rgb(231, 16, 185);
+    display: block;
+    text-align: left; /* Ajustar o alinhamento do texto dentro do elemento */
+    margin-left: 10px; /* Adicionar margem à esquerda para criar espaço entre a imagem e o texto */
+}
+
+.home-img {
+    float: left; /* Alinhar a imagem à esquerda */
+    margin-right: 200px; /* Adicionar margem à direita para criar espaço entre a imagem e o texto */
+}
+/*este é o freme do texto*/
+@keyframes animateWord {
+    0% {
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+.txt-per h1 {
+    display: flex; /* Use flexbox para o movimento horizontal */
+    align-items: baseline;
+}
+
+.txt-per h1 > span {
+    position: relative;
+    display: inline-block;
+    color: #bd27bd;
+    height: 1.2em;
+    vertical-align: bottom;
+    overflow: hidden;
+    margin-right: 10px; /
+}
+
+.txt-per h1 > span > span {
+    display: block;
+    animation: animateWord 5s infinite ease;
+}
+
+
+/*fim*/
 
 
 .hero {

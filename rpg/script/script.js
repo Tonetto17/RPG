@@ -7,19 +7,34 @@ function slider(anything) {
 // fim
 
 //Texto na frente das imagens 
-function showText(personagem) {
-    var texto = '';
-  
-    if (personagem === 'personagem1') {
-      texto = 'Medieval';
-    } else if (personagem === 'personagem2') {
-      texto = 'Faroeste';
-    } else if (personagem === 'personagem3') {
-      texto = 'Futurista';
-    }
-  
-    document.getElementById('textoPersonagem').textContent = texto;
+
+//Texto na frente das imagens 
+function showTextWithTypingEffect(personagem) {
+  var texto = '';
+
+  if (personagem === 'personagem1') {
+    texto = "Neste cenário repleto de maravilhas e desafios, aventure-se por florestas ancestrais, ruínas esquecidas e cidades majestosas em busca de tesouros lendários e poderosas relíquias. Forje alianças com companheiros de jornada, cada um com habilidades únicas, e juntos enfrentem ameaças sombrias que espreitam nos recantos mais obscuros.";
+  } else if (personagem === 'personagem2') {
+    texto = " Bem-vindo ao mundo implacável do Velho Oeste, onde homens valentes e mulheres destemidas se aventuram nas vastas terras selvagens, em busca de fama, fortuna e justiça. No horizonte, o sol escaldante banha as cidades empoeiradas, onde foras da lei tramam seus planos, e xerifes corajosos estão prontos para manter a ordem.";
+  } else if (personagem === 'personagem3') {
+    texto = "Prepare-se para mergulhar em um mundo onde os limites entre o humano e o artificial se desvaneceram, onde a jornada pela verdade e justiça irá desafiar sua perspectiva sobre o futuro da humanidade. Seja bem-vindo(a), suas escolhas definirão o futuro!";
   }
+
+  var textElement = document.getElementById('textoPersonagem');
+  textElement.textContent = ''; // Limpa o conteúdo anterior
+
+  var index = 0;
+  var typingInterval = setInterval(function() {
+    textElement.textContent += texto[index];
+    index++;
+    if (index >= texto.length) {
+      clearInterval(typingInterval); // Para o intervalo quando todo o texto foi digitado
+    }
+  }, 50); // Intervalo entre cada letra (em milissegundos)
+}
+  // Final
+
+
   // Final
 
 

@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/estiloconteudo.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <title>Rpg</title>
-    
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!--Cabeçalho-->
 
     <header>
-        <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
-         
+      <a href="#" class="logo"
+        ><i class="bx bxs-castle bx-flashing"></i>REINOS PERDIDOS</a
+      >
 
-        <ul class="Links">
-        
-            <li><a href="#" class="active">Sobre</a></li>
-            <li><a href="cadastro.php" class="active">Cadastro</a></li>
-            <li><a href="login.php" class="active">Login</a></li>
-        </ul><!--Links-->
+      <ul class="Links">
+        <li><a href="#" class="active">Sobre</a></li>
+        <li><a href="cadastro.php" class="active">Cadastro</a></li>
+        <li><a href="login.php" class="active">Login</a></li>
+      </ul>
+      <!--Links-->
 
-        <div class="h-main">
-            <div class="bx bx-menu" id="menu-icon"></div>
-            <div class="bx bx-moon" id="darkmode"></div>
-        </div><!--h-main-->
-    </header> 
+      <div class="h-main">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-moon" id="darkmode"></div>
+      </div>
+      <!--h-main-->
+    </header>
     <!--Cabeçalho-->
 
-
-
     <section class="home">
-        <div class="home-img">
-            <img src="imagem/Medieval.png" class="one">
+      <div class="home-img">
+        <img src="imagem/Medieval.png" class="one" />
+      </div>
 
-        </div>
-        <p></p>
-        <div class= "txt-per" id="textoPersonagem">
-            <p>Neste cenário repleto de maravilhas e desafios, aventure-se por florestas ancestrais, ruínas esquecidas e cidades majestosas em busca de tesouros lendários e poderosas relíquias. Forje alianças com companheiros de jornada, cada um com habilidades únicas, e juntos enfrentem ameaças sombrias que espreitam nos recantos mais obscuros </p>
-            <p>em cada personagem</p>
-        </div>
-
-        </div>
+      <div class="txt-per" id="textoPersonagem">
+        <h1>
+          Faça sua História
+          <span>
+            <span>Nunca Desista</span><span>Vamos a luta</span>
+            <span>Tente de novo</span><span>Mesma que doa</span>
+            <span>Nunca Desista</span>
+          </span>
+        </h1>
+      </div>
     </section>
 
     <div class="main">
-        <div class="row">
-            <li><img src="imagem/Medieval.png" alt="Medieval"
-                    onclick="slider('imagem/Medieval.png') , showText('personagem1') ">
-                    
-            </li>
+      <div class="row">
+        <li>
+          <img
+            src="imagem/Medieval.png"
+            alt="Medieval"
+            onclick="slider('imagem/Medieval.png') , showTextWithTypingEffect('personagem1') "
+          />
+        </li>
+      </div>
 
-        </div>
+      <div class="row2">
+        <li>
+          <img
+            src="imagem/Faroeste.png"
+            alt="faroeste"
+            onclick="slider('imagem/Faroeste.png') , showTextWithTypingEffect('personagem2')"
+          />
+        </li>
+      </div>
 
-        <div class="row2">
-            <li><img src="imagem/Faroeste.png" alt="faroeste"
-                    onclick="slider('imagem/Faroeste.png') , showText('personagem2')">
-            </li>
-
-        </div>
-
-        <div class="row3">
-            <li><img src="imagem/Futurismo.png" alt="Futurista"
-                    onclick="slider('imagem/Futurismo.png'), showText('personagem3')"></li>
-        </div>
+      <div class="row3">
+        <li>
+          <img
+            src="imagem/Futurismo.png"
+            alt="Futurista"
+            onclick="slider('imagem/Futurismo.png'), showTextWithTypingEffect('personagem3')"
+          />
+        </li>
+      </div>
     </div>
 
-
     <script src="script/script.js"></script>
-</body>
-
+  </body>
 </html>

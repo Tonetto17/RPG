@@ -12,8 +12,8 @@ $nomeusuario = $_SESSION['nomeusuario'];
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/estiloconteudo.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <title>Conteudos</title>
+    <link rel="icon" href="icones/Castelologo.png">
+    <title>REINOS PERDIDOS</title>
 </head>
 
 <body>
