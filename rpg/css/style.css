@@ -23,7 +23,9 @@ body {
     color: var(--text-color);
 }
 .txt-per {
+
     color: #080108;
+    color: rgb(231, 16, 185);
     display: block;
     text-align: left; /* Ajustar o alinhamento do texto dentro do elemento */
     margin-left: 10px; /* Adicionar margem à esquerda para criar espaço entre a imagem e o texto */
@@ -68,6 +70,7 @@ body {
 }
 
 .txt-per h1 > span > span {
+
     padding: 10px;
     display: block;
     animation: animateWord 5s infinite ease;
