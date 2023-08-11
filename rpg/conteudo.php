@@ -22,7 +22,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="" class="active">Configurações</a></li>
+            <li><a href="alteracliente.php" class="active">Configurações</a></li>
             <li><a href="login.php" class="active">Sair</a></li>
             <?php
             #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA

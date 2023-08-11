@@ -2,13 +2,12 @@
 include("conectadb.php");
 
 session_start();
+
 $nomeusuario = $_SESSION['nomeusuario'];
 
-
 $id = $_GET['id'];
-$sql = "SELECT * FROM usuarios WHERE usu_id= '$id'";
+$sql = "SELECT * FROM usuarios WHERE usu_id = '$id'";
 $retorno = mysqli_query($link, $sql);
-
 
 #PREENCHA O ARRAY SEMPRE
 while ($tbl = mysqli_fetch_array($retorno)) {
@@ -27,6 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nivel = $_POST['nivel'];
     $ativo = $_POST['ativo'];
 
+    // Check if the logged-in user matches the user being modified
+    if ($nomeusuario !== $nome) {
+        echo "<script>window.alert('Você não tem permissão para modificar este usuário!');</script>";
+        echo "<script>window.location.href='admhome.php';</script>";
+        exit; // Stop further execution
+    }
+
     $sql = "UPDATE usuarios SET usu_nome = '$nome', usu_email= '$email', usu_senha= '$senha', usu_nivel= '$nivel', usu_ativo= '$ativo' WHERE usu_id= $id";
 
     mysqli_query($link, $sql);
@@ -34,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "<script>window.alert('USUARIO ALTERADO COM SUCESSO!');</script>";
     echo "<script>window.location.href='admhome.php';</script>";
 }
+
 ?>
 
 
@@ -103,17 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <input type="password" name="senha" id="senha" value="<?= $senha ?>" required>
                         <p></p>
 
-                        <div class="form">
-                            <label>Cliente:</label>
-                            <input type="radio" name="nivel" value="0" <?= $nivel == "0" ? "checked" : "" ?>>Usu<br>
-                            <input type="radio" name="nivel" value="1" <?= $nivel == "1" ? "checked" : "" ?>>Adm<br>
-                        </div>
-                        <p></p>
-                        <div class="form">
-                            <label>Status:</label>
-                            <input type="radio" name="ativo" id="ativo" value="s" <?= $ativo == "s" ? "checked" : "" ?>>ATIVO<br>
-                            <input type="radio" name="ativo" id="ativo" value="n" <?= $ativo == "n" ? "checked" : "" ?>>INATIVO<br>
-                        </div>
+                      
                     </form>
                 </div>
 

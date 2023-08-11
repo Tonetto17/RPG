@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="admhome.php" class="active">Voltar</a></li>
             <li><a href="login.php" class="active">Sair</a></li>
             
