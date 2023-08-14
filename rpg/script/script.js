@@ -47,21 +47,21 @@ darkmode.onclick = () => {
 let menu = document.querySelector('#menu-icon');
 let Links = document.querySelector ('.Links');
 
-    // Função para verificar a posição da rolagem e aplicar a classe conforme necessário
-    function checkScroll() {
-        var menu = document.querySelector('.h-main'); // Seletor da barra de menu
-        var scrollPosition = window.scrollY; // Posição atual da rolagem
+function checkScroll() {
+  var header = document.getElementById('main-header'); // Seletor do header
+  var scrollPosition = window.scrollY; // Posição atual da rolagem
 
-        // Verifica se a posição de rolagem é maior que 0
-        if (scrollPosition > 0) {
-            menu.classList.add('darken-menu'); // Adiciona a classe para escurecer
-        } else {
-            menu.classList.remove('darken-menu'); // Remove a classe
-        }
-    }
+  // Verifica se a posição de rolagem é maior que 0
+  if (scrollPosition > 0) {
+      header.classList.add('dark-header'); // Adiciona a classe para escurecer o header
+  } else {
+      header.classList.remove('dark-header'); // Remove a classe
+  }
+}
 
-    // Define um ouvinte de evento para a rolagem da janela
-    window.addEventListener('scroll', checkScroll);
+// Define um ouvinte de evento para a rolagem da janela
+window.addEventListener('scroll', checkScroll);
+    
 
 
 menu.onclick = () => {

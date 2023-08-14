@@ -169,7 +169,7 @@ header {
     
     
 }
-.darken-menu {
+.dark-header {
     background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo escura */
     transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
