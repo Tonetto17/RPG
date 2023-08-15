@@ -50,7 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <ul class="Links">
             <li><a href="conteudo.php" class="active">Inicio</a></li>
-            <li><a href="alteracliente.php?idusuario=<?=$idusuario?>" class="active">Configurações</a></li>
+            <li><a href="ususarioalterasuario.php?idusuario=<?=$idusuario?>" class="active">Configurações</a></li>
+            <li><a href="conteudo.php" class="active">Voltar</a></li>
             <li><a href="login.php" class="active">Sair</a></li>
             <?php
             #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA

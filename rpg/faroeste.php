@@ -15,55 +15,52 @@ $nomeusuario = $_SESSION['nomeusuario'];
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body id="top">
-  <header>
-  <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
+
+  <header class="h-main" id="main-header">
+    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="" class="active">Configurações</a></li>
-      <li><a href="conteudo.php" class="active">voltar</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Configurações</a></li>
+      <li><a href="conteudo.php" class="active">Voltar</a></li>
       <li><a href="login.php" class="active">Sair</a></li>
       <?php
-      
+      #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
+      # SE SESSÃO ABERTA, FECHA O PHP PARA USAR ELEMENTOS HTML
       if ($nomeusuario != null) {
-        ?>
-      
+      ?>
+        <!--USO DE ELEMENTO HTML COM PHP INTERNO-->
         <a href="" class="active">
           <li class="profile">Olá
             <?= strtoupper($nomeusuario) ?>
         </a></li>
-        <?php
-       
+      <?php
+        # ABERTURA DE OUTRO PHP PARA CASO FALSE
       } else {
         echo "<script>window.alert('USUARIO NÃO AUTENTICADO'); window.location.href='../login.php';</script>";
       }
-      
+      # FIM DO PHP PARA CONTINUAR MEU HTML
       ?>
 
-    </ul>
+    </ul><!--Links-->
 
-    <div class="h-main">
-      <div class="bx bx-moon" id="darkmode"></div>
+    <div class="h-main" id="menu-bar">
       <div class="bx bx-menu" id="menu-icon"></div>
+      <div class="bx bx-moon" id="darkmode"></div>
+    </div><!--h-main-->
 
-
-
-    </div>
   </header>
-  
+
 
 
   <main>
     <article>
-      <section class="section hero" id="home" aria-label="home"
-        style="background-image: url('imagem/cidadefaroeste.jpg')">
+      <section class="section hero" id="home" aria-label="home" style="background-image: url('imagem/cidadefaroeste.jpg')">
         <div class="container">
 
           <div class="hero-content">
@@ -134,8 +131,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="imagem/IvanaSummer.png" width="450" height="600" loading="lazy"
-                    alt="Personagem" class="img-cover">
+                  <img src="imagem/IvanaSummer.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -156,8 +152,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                    class="card-icon">
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
@@ -180,8 +175,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="imagem/LandonCarter.png" width="450" height="600" loading="lazy"
-                    alt="Personagem" class="img-cover">
+                  <img src="imagem/LandonCarter.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -202,8 +196,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                    class="card-icon">
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
@@ -226,8 +219,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="imagem/MiaMowbry.png" width="450" height="600" loading="lazy"
-                    alt="Personagem" class="img-cover">
+                  <img src="imagem/MiaMowbry.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -248,8 +240,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                    class="card-icon">
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
@@ -272,8 +263,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="featured-game-card">
 
                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                  <img src="imagem/SymondAlma.png" width="450" height="600" loading="lazy"
-                    alt="Personagem" class="img-cover">
+                  <img src="imagem/SymondAlma.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -294,8 +284,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                    class="card-icon">
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
                     <a href="#" class="card-title">
@@ -321,8 +310,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
 
 
-      <section class="section shop" id="shop" aria-label="shop"
-        style="background-image: url('./assets/images/shop-bg.jpg')">
+      <section class="section shop" id="shop" aria-label="shop" style="background-image: url('./assets/images/shop-bg.jpg')">
         <div class="container">
 
           <h2 class="h2 section-title">
@@ -365,8 +353,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa"
-                    class="img-cover">
+                  <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -394,8 +381,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="imagem/Ficha01.jpg" width="300" height="260" loading="lazy"
-                    alt="Programa de fichas" class="img-cover">
+                  <img src="imagem/Ficha01.jpg" width="300" height="260" loading="lazy" alt="Programa de fichas" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -423,8 +409,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
               <div class="shop-card">
 
                 <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                  <img src="imagem/Ficha02.jpg" width="300" height="260" loading="lazy" alt="Ficha fisica"
-                    class="img-cover">
+                  <img src="imagem/Ficha02.jpg" width="300" height="260" loading="lazy" alt="Ficha fisica" class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -475,15 +460,15 @@ $nomeusuario = $_SESSION['nomeusuario'];
               </li>
 
               <li>
-                <a href="#" class="footer-link">linkedin</a>
+                <a href="https://www.linkedin.com/in/giovanna-correia-tonetto-536897255/" class="footer-link" target="_blank">linkedin</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">GitHub</a>
+                <a href="https://github.com/Tonetto17" class="footer-link" target="_blank">GitHub</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Instagram</a>
+                <a href="https://instagram.com/__tonetto__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="footer-link" target="_blank">Instagram</a>
               </li>
 
 
@@ -504,15 +489,16 @@ $nomeusuario = $_SESSION['nomeusuario'];
               </li>
 
               <li>
-                <a href="#" class="footer-link">linkedin</a>
+                <a href="https://www.linkedin.com/in/joan-lenon-barbosa-532058185/" class="footer-link" target="_blank">linkedin</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">GitHub</a>
+                <a href="https://github.com/Joanlenon" class="footer-link" target="_blank">GitHub</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Instagram</a>
+                <a href="https://instagram.com/joanlenon" class="footer-link" target="_blank
+                ">Instagram</a>
               </li>
 
 
@@ -533,15 +519,15 @@ $nomeusuario = $_SESSION['nomeusuario'];
               </li>
 
               <li>
-                <a href="#" class="footer-link">linkedin</a>
+                <a href="https://www.linkedin.com/in/sarah-fontanezi-7b8901288/" class="footer-link" target="_blank">linkedin</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">GitHub</a>
+                <a href="https://github.com/sarinha1403" class="footer-link" target="_blank">GitHub</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Instagram</a>
+                <a href="https://instagram.com/bysarinha_perdida?" class="footer-link" target="_blank">Instagram</a>
               </li>
 
 

@@ -8,7 +8,27 @@
     list-style: none;
     font-family: 'MuseoModerno', cursive;
 }
+/*Começo*/
 
+#darkmode {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--text-color);
+  margin-left: 10px;
+ 
+  
+  
+}
+.dark-header {
+  background-color: rgba(34, 31, 31, 0.8); /* Cor de fundo escura */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+.dark-header .logo{
+  color: #f8f4e3;
+  transition:  var(--bg-color) 0.3 ease;
+}
+
+/*fim*/
 :root {
     --text-color: #000000;
     --bg-color: #e5e5e5;
