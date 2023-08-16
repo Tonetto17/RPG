@@ -51,3 +51,22 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+
+const selectElement = document.getElementById("download-select");
+const downloadLink = document.getElementById("download-link");
+
+selectElement.addEventListener("change", () => {
+  const selectedValue = selectElement.value;
+  if (selectedValue) {
+    downloadLink.href = selectedValue;
+    downloadLink.setAttribute("download", selectedValue.substring(selectedValue.lastIndexOf("/") + 1));
+  } else {
+    downloadLink.removeAttribute("href");
+    downloadLink.removeAttribute("download");
+  }
+});
+/*PARA BAIXAR IMAGENS*/
+
+/*FIM*/ 

@@ -1,6 +1,7 @@
 <?php
 session_start();
 $nomeusuario = $_SESSION['nomeusuario'];
+$idusuario = $_SESSION['idusuario'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +27,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Configurações</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Alterar Usuário</a></li>
       <li><a href="conteudo.php" class="active">Voltar</a></li>
       <li><a href="login.php" class="active">Sair</a></li>
       <?php
@@ -135,7 +136,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/HenryZaki.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Henry Zaki</span>
                     </a>
                   </h3>
@@ -153,7 +154,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/HenryZaki.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -179,7 +180,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem//AelaPierce.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Aela Pierce</span>
                     </a>
                   </h3>
@@ -197,7 +198,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/AelaPierce.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -223,7 +224,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/DoranJordan.png" class="card-title" tabindex="-1">
                       Personagem<span class="span">Doran Jordan</span>
                     </a>
                   </h3>
@@ -241,7 +242,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/DoranJordan.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -267,7 +268,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/MackHadwell.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Mack Hadwell</span>
                     </a>
                   </h3>
@@ -285,7 +286,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/MackHadwell.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -330,13 +331,13 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="./fichas/FUTURISMO.txt" class="card-badge skewBg">Historia</a>
+                  <a href="./historias/FUTURISMO.txt" class="card-badge skewBg">Historia</a>
 
                   <h3 class="h3">
-                    <a href="./fichas/FUTURISMO.txt" class="card-title">Baixe sua historia</a>
+                    <a href="./historias/FUTURISMO.txt" class="card-title">Baixe sua historia</a>
                   </h3>
                   <div class="card-wrapper">
-                    <a href="./fichas/FUTURISMO.txt" download="FUTURISMO.txt" class="card-btn">
+                    <a href="./historias/FUTURISMO.txt" download="FUTURISMO.txt" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>
@@ -350,15 +351,16 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa" class="img-cover">
                 </figure>
                 <div class="card-content">
-                  <a href="./mapas/futurista/cidadeFUTURISTA.png" class="card-badge skewBg">Mapa</a>
+                  <a href="./mapas/futurista.zip" class="card-badge skewBg">Mapa</a>
                   <h3 class="h3">
-                    <a href="./mapas/futurista/cidadeFUTURISTA.png" class="card-title">Baixe os mapas</a>
+                    <a href="./mapas/futurista.zip" class="card-title">Baixe os mapas</a>
                   </h3>
                   <div class="card-wrapper">
-                    <a href="./mapas/futurista/cidadeFUTURISTA.png" download="CIDADEFUTRUSITA.png" class="card-btn">
+                    <a href="./mapas/futurista.zip" download="MAPA FUTURISMO" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>
+
 
                 </div>
               </div>
@@ -375,7 +377,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                     <a href="#" class="card-title">Ficha online</a>
                   </h3>
                   <div class="card-wrapper">
-                    <a href="#" download="FUTURISMO.txt" class="card-btn">
+                    <a href="#" download="FUTURISMO" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>
@@ -392,14 +394,14 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="#" class="card-badge skewBg">Ficha fisica</a>
+                  <a href="./fichas/fichas.zip" class="card-badge skewBg">Ficha fisica</a>
 
                   <h3 class="h3">
-                    <a href="./" class="card-title">Ficha fisica</a>
+                    <a href="./fichas/fichas.zip" class="card-title">Ficha fisica</a>
                   </h3>
 
                   <div class="card-wrapper">
-                    <a href="./fichas/FUTURISMO.txt" download="FUTURISMO.txt" class="card-btn">
+                    <a href="./fichas/fichas.zip" download="FUTURISMO" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>

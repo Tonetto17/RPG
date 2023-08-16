@@ -1,6 +1,7 @@
 <?php
 session_start();
 $nomeusuario = $_SESSION['nomeusuario'];
+$idusuario = $_SESSION['idusuario'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +27,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Configurações</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Alterar Usuário</a></li>
       <li><a href="conteudo.php" class="active">Voltar</a></li>
       <li><a href="login.php" class="active">Sair</a></li>
       <?php
@@ -137,7 +138,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/IvanaSummer.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Ivana Summer</span>
                     </a>
                   </h3>
@@ -155,7 +156,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/IvanaSummer.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -181,7 +182,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/LandonCarter.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Landon Carter</span>
                     </a>
                   </h3>
@@ -199,7 +200,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/LandonCarter.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -225,7 +226,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/MiaMowbry.png" class="card-title" tabindex="-1">
                       Personagem<span class="span">Mia Mowbry</span>
                     </a>
                   </h3>
@@ -243,7 +244,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/MiaMowbry.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
@@ -258,7 +259,6 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
               </div>
             </li>
-
             <li class="scrollbar-item">
               <div class="featured-game-card">
 
@@ -269,39 +269,34 @@ $nomeusuario = $_SESSION['nomeusuario'];
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title" tabindex="-1">
+                    <a href="./imagem/SymondAlma.png" class="card-title" tabindex="-1">
                       Personagem <span class="span">Symond Alma</span>
                     </a>
                   </h3>
 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
-
                     <span class="span">Vilão</span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
-
                   <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
-
                   <h3 class="h3">
-                    <a href="#" class="card-title">
+                    <a href="./imagem/SymondAlma.png" class="card-title" id="download-link">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
-
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
-
                     <span class="span">Vilão</span>
                   </span>
-
                 </div>
 
               </div>
             </li>
+
 
           </ul>
 
@@ -332,17 +327,18 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="#" class="card-badge skewBg">Historia</a>
+                  <a href="./historias/FAROESTE.txt" class="card-badge skewBg">Historia</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Baixe sua historia</a>
+                    <a href="./historias/FAROESTE.txt" class="card-title">Baixe sua historia</a>
                   </h3>
 
                   <div class="card-wrapper">
-                    <button class="card-btn">
+                    <a href="./historias/FAROESTE.txt" download="FAROESTE.txt" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
-                    </button>
+                    </a>
                   </div>
+
 
                 </div>
 
@@ -358,23 +354,20 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="#" class="card-badge skewBg">Mapa</a>
+                  <a href="./mapas/faroeste.zip" class="card-badge skewBg">Mapa</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Baixe os mapas</a>
+                    <a href="./mapas/faroeste.zip" class="card-title">Baixe os mapas</a>
                   </h3>
 
                   <div class="card-wrapper">
-
-
-                    <button class="card-btn">
+                    <a href="./mapas/faroeste.zip" download="faroeste.zip" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
-                    </button>
+                    </a>
                   </div>
 
-                </div>
 
-              </div>
+                </div>
             </li>
 
             <li class="scrollbar-item">
@@ -386,20 +379,17 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="#" class="card-badge skewBg">Ficha online</a>
+                  <a href="" class="card-badge skewBg">Ficha online</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Ficha online</a>
+                    <a href="" class="card-title">Ficha online</a>
                   </h3>
 
                   <div class="card-wrapper">
-
-
-                    <button class="card-btn">
+                    <a href="fichas.zip" download="fischas.zip" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
-                    </button>
+                    </a>
                   </div>
-
                 </div>
 
               </div>
@@ -414,18 +404,16 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
                 <div class="card-content">
 
-                  <a href="#" class="card-badge skewBg">Ficha fisica</a>
+                  <a href="./fichas/fichas.zip" class="card-badge skewBg">Ficha fisica</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Ficha fisica</a>
+                    <a href="./fichas/fichas.zip" class="card-title">Ficha fisica</a>
                   </h3>
 
                   <div class="card-wrapper">
-
-
-                    <button class="card-btn">
+                    <a href="./fichas/fichas.zip" download="fischas.zip" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
-                    </button>
+                    </a>
                   </div>
 
                 </div>

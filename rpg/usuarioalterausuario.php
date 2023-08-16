@@ -45,40 +45,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-<header>
-        <a href="#" class="logo"><i class='bx bxs-castle bx-flashing' ></i>REINOS PERDIDOS</a>
+<header class="h-main" id="main-header">
+        <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
 
         <ul class="Links">
-            <li><a href="conteudo.php" class="active">Inicio</a></li>
-            <li><a href="ususarioalterasuario.php?idusuario=<?=$idusuario?>" class="active">Configurações</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active" >Alterar Usuário</a></li>
             <li><a href="conteudo.php" class="active">Voltar</a></li>
-            <li><a href="login.php" class="active">Sair</a></li>
             <?php
-            #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
-            # SE SESSÃO ABERTA, FECHA O PHP PARA USAR ELEMENTOS HTML
             if ($nomeusuario != null) {
-                ?>
-                <!--USO DE ELEMENTO HTML COM PHP INTERNO-->
-                <a href="" class="active">
-                    <li class="profile">Olá
-                        <?= strtoupper($nomeusuario) ?>
-                </a></li>
-                <?php
-                # ABERTURA DE OUTRO PHP PARA CASO FALSE
+            ?>
+                <li class="profile"><a href="#" class="active">Olá <?= strtoupper($nomeusuario) ?></a></li>
+            <?php
             } else {
                 echo "<script>window.alert('USUARIO NÃO AUTENTICADO'); window.location.href='../login.php';</script>";
             }
-            # FIM DO PHP PARA CONTINUAR MEU HTML
             ?>
+        </ul>
 
-        </ul><!--Links-->
-
-        <div class="h-main">
+        <div class="h-main" id="menu-bar">
             <div class="bx bx-menu" id="menu-icon"></div>
             <div class="bx bx-moon" id="darkmode"></div>
-
-        </div><!--h-main-->
+        </div>
     </header>
+
     <!--Cabeçalho-->
     <br>
     <div class="container">

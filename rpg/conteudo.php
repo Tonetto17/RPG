@@ -23,34 +23,29 @@ $idusuario = $_SESSION['idusuario'];
 
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Configurações</a></li>
+
+            <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active" >Alterar Usuário</a></li>
+
+            
             <li><a href="login.php" class="active">Sair</a></li>
             <?php
-            #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
-            # SE SESSÃO ABERTA, FECHA O PHP PARA USAR ELEMENTOS HTML
             if ($nomeusuario != null) {
             ?>
-                <!--USO DE ELEMENTO HTML COM PHP INTERNO-->
-                <a href="" class="active">
-                    <li class="profile">Olá
-                        <?= strtoupper($nomeusuario) ?>
-                </a></li>
+                <li class="profile"><a href="#" class="active">Olá <?= strtoupper($nomeusuario) ?></a></li>
             <?php
-                # ABERTURA DE OUTRO PHP PARA CASO FALSE
             } else {
                 echo "<script>window.alert('USUARIO NÃO AUTENTICADO'); window.location.href='../login.php';</script>";
             }
-            # FIM DO PHP PARA CONTINUAR MEU HTML
             ?>
-
-        </ul><!--Links-->
+        </ul>
 
         <div class="h-main" id="menu-bar">
             <div class="bx bx-menu" id="menu-icon"></div>
             <div class="bx bx-moon" id="darkmode"></div>
-        </div><!--h-main-->
-
+        </div>
     </header>
+
+
     <!--Cabeçalho-->
 
     <!-- letras -->

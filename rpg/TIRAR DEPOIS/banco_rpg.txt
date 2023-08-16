@@ -13,6 +13,9 @@ CREATE TABLE usuarios(
     usu_nivel CHAR(1) NOT NULL,
     usu_ativo CHAR(1)
     );
+
+ALTER TABLE usuarios ADD COLUMN usu_token VARCHAR(50);
+
     
     
 

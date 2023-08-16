@@ -18,6 +18,18 @@
     --p-font: 1rem:
 }
 
+ 
+/* Estilos para links ativos */
+.active {
+    font-weight: bold;
+}
+
+/* Estilos para o link "Sair" */
+.active:hover {
+    background-color: #d9534f;
+}
+
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
