@@ -23,6 +23,7 @@
   background-color: rgba(34, 31, 31, 0.8); /* Cor de fundo escura */
   transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
+
 .dark-header .logo{
   color: #f8f4e3;
   transition:  var(--bg-color) 0.3 ease;

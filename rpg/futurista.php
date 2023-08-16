@@ -1,6 +1,7 @@
 <?php
 session_start();
 $nomeusuario = $_SESSION['nomeusuario'];
+$idusuario = $_SESSION['idusuario'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +27,7 @@ $nomeusuario = $_SESSION['nomeusuario'];
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Configurações</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active" >Alterar Usuário</a></li>
       <li><a href="conteudo.php" class="active">Voltar</a></li>
       <li><a href="login.php" class="active">Sair</a></li>
       <?php

@@ -96,6 +96,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input class="btn-login" type="submit" name="login" value="LOGIN">
 
                     <p>Não possui cadastro? <a href="cadastro.php">Faça cadastro aqui</a></p>
+                    <p>Esquece a senha <a href="reset_password.php">Recupere aqui</a></p>
+
                     <p><a href="index.html">Volte para o menu </a></p>
 
 

@@ -7,6 +7,8 @@ function slider(anything) {
 // fim
 
 //Texto na frente das imagens 
+var typingInterval = null; // Variável global para armazenar o intervalo de digitação
+
 function showTextWithTypingEffect(personagem) {
   var texto = '';
 
@@ -17,18 +19,24 @@ function showTextWithTypingEffect(personagem) {
   } else if (personagem === 'personagem3') {
     texto = "Prepare-se para mergulhar em um mundo onde os limites entre o humano e o artificial se desvaneceram, onde a jornada pela verdade e justiça irá desafiar sua perspectiva sobre o futuro da humanidade. Seja bem-vindo(a), suas escolhas definirão o futuro!";
   }
-
   var textElement = document.getElementById('textoPersonagem');
   textElement.textContent = ''; // Limpa o conteúdo anterior
 
+  if (typingInterval) {
+    clearInterval(typingInterval);
+  }
+
   var index = 0;
-  var typingInterval = setInterval(function() {
-    textElement.textContent += texto[index];
-    index++;
-    if (index >= texto.length) {
-      clearInterval(typingInterval); // Para o intervalo quando todo o texto foi digitado
+
+  function typeNextChar() {
+    if (index < texto.length) {
+      textElement.textContent += texto[index];
+      index++;
+      typingInterval = setTimeout(typeNextChar, 50);
     }
-  }, 50); // Intervalo entre cada letra (em milissegundos)
+  }
+
+  typeNextChar();
 }
 
 
