@@ -161,8 +161,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
-
+                <div class="card-wrapper">
+                    <a href="./imagem/VenciaCarnavon.png" download="MEDIEVAL" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
                   <h3 class="h3">
                     <a href="./imagem/VenciaCarnavon.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
@@ -205,7 +208,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                <div class="card-wrapper">
+                    <a href="./imagem/heroi2medieval.png" download="MEDIEVAL" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
 
                   <h3 class="h3">
                     <a href="./imagem/heroi2medieval.png" class="card-title">
@@ -249,7 +256,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                <div class="card-wrapper">
+                    <a href="./imagem/vilao1medieval.png" download="MEDIEVAL" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
 
                   <h3 class="h3">
                     <a href="./imagem/vilao1medieval.png" class="card-title">
@@ -293,14 +304,19 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                 
+                  <div class="card-wrapper">
+                    <a href="./imagem/vilao2medieval.png" download="MEDIEVAL" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
 
                   <h3 class="h3">
                     <a href="./imagem/vilao2medieval.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
-
+                 
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
@@ -427,7 +443,7 @@ $idusuario = $_SESSION['idusuario'];
                   </h3>
 
                   <div class="card-wrapper">
-                    <a href="./fichas/fichas.zip" download="FUTURISMO" class="card-btn">
+                    <a href="./fichas/fichas.zip" download="MEDIEVAL" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>

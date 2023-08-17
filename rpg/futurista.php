@@ -151,8 +151,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
-
+                <div class="card-wrapper">
+                    <a href="./imagem/HenryZaki.png" download="FUTURISMO" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
                   <h3 class="h3">
                     <a href="./imagem/HenryZaki.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
@@ -195,8 +198,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
-
+                <div class="card-wrapper">
+                    <a href="./imagem/AelaPierce.png" download="FUTURISMO" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
                   <h3 class="h3">
                     <a href="./imagem/AelaPierce.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
@@ -239,8 +245,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
-
+                <div class="card-wrapper">
+                    <a href="./imagem/DoranJordan.png" download="FUTURISMO" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
                   <h3 class="h3">
                     <a href="./imagem/DoranJordan.png" class="card-title">
                       Baixe seu <span class="span">Personagem</span>
@@ -283,7 +292,11 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon"><div class="card-wrapper">
+                    <a href="./imagem/MackHadwell.png" download="FUTURISMO" class="card-btn">
+                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
 
                   <h3 class="h3">
                     <a href="./imagem/MackHadwell.png" class="card-title">

@@ -23,10 +23,7 @@ $idusuario = $_SESSION['idusuario'];
 
         <ul class="Links">
             <li><a href="index.html" class="active">Inicio</a></li>
-
             <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active" >Alterar Usuário</a></li>
-
-            
             <li><a href="login.php" class="active">Sair</a></li>
             <?php
             if ($nomeusuario != null) {
