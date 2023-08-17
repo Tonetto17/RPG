@@ -26,6 +26,20 @@ function showTextWithTypingEffect(personagem) {
     clearInterval(typingInterval);
   }
 
+
+  var index = 0;
+
+  function typeNextChar() {
+    if (index < texto.length) {
+      textElement.textContent += texto[index];
+      index++;
+      typingInterval = setTimeout(typeNextChar, 50);
+    }
+  }
+
+  typeNextChar();
+}
+
   var index = 0;
 
   function typeNextChar() {
