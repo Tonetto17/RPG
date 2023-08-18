@@ -1,35 +1,32 @@
 <?php
 
-    include("conectadb.php");
+include("conectadb.php");
 
-    if($_SERVER['REQUEST_METHOD']== 'POST')
-    {
-        $nome= $_POST ['nome'];
-        $email = $_POST ['email'];
-        $senha = $_POST ['senha'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        $sql= "SELECT COUNT(usu_id) FROM usuarios WHERE usu_nome= '$nome' AND usu_email = '$email' AND usu_senha = '$senha'";
-       
-        $retorno = mysqli_query($link, $sql);
+    // Hash the password
+    $hashedPassword = password_hash($senha, PASSWORD_DEFAULT);
 
-        while($tbl = mysqli_fetch_array($retorno))
-        {
-            $cont = $tbl[0];
-        }
+    $sql = "SELECT COUNT(usu_id) FROM usuarios WHERE usu_nome = '$nome' AND usu_email = '$email'";
+    $retorno = mysqli_query($link, $sql);
 
-        if($cont == 1){
-            echo"<script>window.alert('USUARIO JÁ EXISTE');</script>";
-        }else{
-            
-            $sql= "INSERT INTO usuarios (usu_nome, usu_email, usu_senha, usu_nivel,  usu_ativo) VALUES ('$nome','$email', '$senha','0', 's')" ;
-            mysqli_query($link, $sql);
-
-            echo"<script>window.alert('USUARIO CADASTRADO');</script>";
-            echo"<script>window.location.href='login.php';</script>";
-        }
+    while ($tbl = mysqli_fetch_array($retorno)) {
+        $cont = $tbl[0];
     }
 
+    if ($cont == 1) {
+        echo "<script>window.alert('USUARIO JÁ EXISTE');</script>";
+    } else {
+        $sql = "INSERT INTO usuarios (usu_nome, usu_email, usu_senha, usu_nivel, usu_ativo) VALUES ('$nome', '$email', '$hashedPassword', '0', 's')";
+        mysqli_query($link, $sql);
 
+        echo "<script>window.alert('USUARIO CADASTRADO');</script>";
+        echo "<script>window.location.href='login.php';</script>";
+    }
+}
 ?>
 
 
