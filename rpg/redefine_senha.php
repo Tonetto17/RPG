@@ -1,4 +1,4 @@
-<?php 
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include('conectadb.php');
     $email = $_POST['email'];
@@ -43,40 +43,52 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="width: 20vw; margin-left: 40vw;">
-    <main style="border-radius: 25px;">
-    <br>
-        <form class="alinha" action="redefine_senha.php" method="POST">
-            <label for="email">
-                <h3>Email:</h3>
-            </label>
-            <input type="email" name="email" id="email" required>
-            <label for="cod">
-                <br>
-                <h3>Código:</h3>
-            </label>
-            <input type="text" name="cod" id="cod" required>
-            <label for="senha">
-                <br>
-                <h3>Senha:</h3>
-            </label>
-            <input type="password" name="senha" id="senha" required>
-            <br>
-            <input type="submit" value="Redefinir">
-            <br>
-        </form>
-        <br>
-        <p id="msg">
-            <?php
-            if (isset($_GET['msg'])) {
-                echo ($_GET['msg']);
-                if ($_GET['msg'] == "Usuario ou senha incorretos") {
-                    echo ("<br><a href='recupera_senha.php'>Esqueci minha senha</a>");
-                }
-            }
-            ?>
-        </p>
-    </main>
+<body class="body-login">
+    <div class="main-login">
+        
+
+        <div class="right-login">
+
+            <div class="card-login">
+                <h1 class="h1-login">Recuperação de senha</h1>
+                <div class="textfield">
+                    <form class="alinha" action="redefine_senha.php" method="POST">
+                        <label for="email">
+                            <h3>Email:</h3>
+                        </label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="cod">
+                            <br>
+                            <h3>Código:</h3>
+                        </label>
+                        <input type="text" name="cod" id="cod" required>
+                        <label for="senha">
+                            <br>
+                            <h3>Senha:</h3>
+                        </label>
+                        <input type="password" name="senha" id="senha" required>
+                        <br>
+                        <input type="submit" value="Redefinir">
+                        <br>
+                    </form>
+                    <br>
+                    <p id="msg">
+                        <?php
+                        if (isset($_GET['msg'])) {
+                            echo ($_GET['msg']);
+                            if ($_GET['msg'] == "Usuario ou senha incorretos") {
+                                echo ("<br><a href='recupera_senha.php'>Esqueci minha senha</a>");
+                            }
+                        }
+                        ?>
+                        </Main>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
