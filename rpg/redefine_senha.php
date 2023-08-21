@@ -19,7 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($cont == 0) {
         $sql = "UPDATE usuarios SET usu_token = '' WHERE usu_email = '$email' ";
         mysqli_query($link, $sql);
-        header("Location:redefine_senha.php?msg=Código Inválido! Solicite um novo código.");
+        header("Location:recupera_senha.php?msg=Código Inválido! Solicite um novo código.");
+    
         exit();
     }
 
