@@ -83,7 +83,9 @@ window.onscroll = () => {
 
 
 // FIM
+
  
+
 // letras conteudo
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
