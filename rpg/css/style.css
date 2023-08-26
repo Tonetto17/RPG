@@ -19,6 +19,8 @@
 }
 
  
+ 
+
 .active {
     font-weight: bold;
 }
@@ -32,6 +34,7 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    
 }
 .txt-per {
 

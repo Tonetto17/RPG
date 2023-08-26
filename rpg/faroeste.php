@@ -23,7 +23,10 @@ $idusuario = $_SESSION['idusuario'];
 <body id="top">
 
   <header class="h-main" id="main-header">
-    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
+    <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
+   
+     
+
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
@@ -47,13 +50,15 @@ $idusuario = $_SESSION['idusuario'];
       }
       # FIM DO PHP PARA CONTINUAR MEU HTML
       ?>
+       
 
     </ul><!--Links-->
-
-    <div class="h-main" id="menu-bar">
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <div class="bx bx-moon" id="darkmode"></div>
-    </div><!--h-main-->
+    
+    <div class="h-main">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div id="darkmode"></div>
+      </div><!--h-main-->
+    <!--h-main-->
 
   </header>
 
@@ -153,9 +158,9 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/IvanaSummer.png" download="FAROESTE" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
                   <h3 class="h3">
@@ -200,9 +205,9 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/LandonCarter.png" download="FAROESTE" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
                   <h3 class="h3">
@@ -247,9 +252,9 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/MiaMowbry.png" download="FAROESTE" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
                   <h3 class="h3">
@@ -291,9 +296,9 @@ $idusuario = $_SESSION['idusuario'];
                 </div>
 
                 <div class="card-content-overlay">
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/SymondAlma.png" download="FAROESTE" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
                   <h3 class="h3">

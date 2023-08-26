@@ -31,11 +31,11 @@ $idusuario = $_SESSION['idusuario'];
 
 
   <header class="h-main" id="main-header">
-    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
+    <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active" >Alterar Usuário</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Alterar Usuário</a></li>
       <li><a href="conteudo.php" class="active">Voltar</a></li>
       <li><a href="login.php" class="active">Sair</a></li>
       <?php
@@ -58,10 +58,11 @@ $idusuario = $_SESSION['idusuario'];
 
     </ul><!--Links-->
 
-    <div class="h-main" id="menu-bar">
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <div class="bx bx-moon" id="darkmode"></div>
-    </div><!--h-main-->
+   
+    <div class="h-main">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div id="darkmode"></div>
+      </div><!--h-main-->
 
   </header>
   <!--Cabeçalho-->
@@ -152,18 +153,23 @@ $idusuario = $_SESSION['idusuario'];
                   </h3>
 
                   <span class="card-meta">
-                    <ion-icon name="notifications"></ion-icon>
+
+                
+                      <ion-icon name="notifications"></ion-icon>
+                  
+                   
 
                     <span class="span">Herói</span>
+                  </span>
                   </span>
 
                 </div>
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/VenciaCarnavon.png" download="MEDIEVAL" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
                   <h3 class="h3">
@@ -208,9 +214,9 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/heroi2medieval.png" download="MEDIEVAL" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
 
@@ -256,9 +262,9 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                <div class="card-wrapper">
+                  <div class="card-wrapper">
                     <a href="./imagem/vilao1medieval.png" download="MEDIEVAL" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
 
@@ -304,10 +310,10 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                 
+
                   <div class="card-wrapper">
                     <a href="./imagem/vilao2medieval.png" download="MEDIEVAL" class="card-btn">
-                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
                     </a>
                   </div>
 
@@ -316,7 +322,7 @@ $idusuario = $_SESSION['idusuario'];
                       Baixe seu <span class="span">Personagem</span>
                     </a>
                   </h3>
-                 
+
                   <span class="card-meta">
                     <ion-icon name="notifications"></ion-icon>
 
@@ -466,111 +472,111 @@ $idusuario = $_SESSION['idusuario'];
 
   <footer class="footer">
 
-<div class="footer-top">
-  <div class="container">
+    <div class="footer-top">
+      <div class="container">
 
-    <div class="footer-brand">
+        <div class="footer-brand">
 
-      <ul class="contact-list">
+          <ul class="contact-list">
 
-        <ul class="footer-list">
+            <ul class="footer-list">
 
-          <li>
-            <p class="footer-list-title">Giovanna</p>
-          </li>
+              <li>
+                <p class="footer-list-title">Giovanna</p>
+              </li>
 
-          <li>
-            <a href="https://www.linkedin.com/in/giovanna-correia-tonetto-536897255/" class="footer-link" target="_blank" >linkedin</a>
-          </li>
+              <li>
+                <a href="https://www.linkedin.com/in/giovanna-correia-tonetto-536897255/" class="footer-link" target="_blank">linkedin</a>
+              </li>
 
-          <li>
-            <a href="https://github.com/Tonetto17" class="footer-link"  target="_blank" >GitHub</a>
-          </li>
+              <li>
+                <a href="https://github.com/Tonetto17" class="footer-link" target="_blank">GitHub</a>
+              </li>
 
-          <li>
-            <a href="https://instagram.com/__tonetto__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="footer-link" target="_blank" >Instagram</a>
-          </li>
+              <li>
+                <a href="https://instagram.com/__tonetto__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="footer-link" target="_blank">Instagram</a>
+              </li>
 
 
-        </ul>
+            </ul>
 
-      </ul>
+          </ul>
 
+        </div>
+
+        <div class="footer-brand">
+
+          <ul class="contact-list">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Joan</p>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/joan-lenon-barbosa-532058185/" class="footer-link" target="_blank">linkedin</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/Joanlenon" class="footer-link" target="_blank">GitHub</a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/joanlenon" class="footer-link" target="_blank">Instagram</a>
+              </li>
+
+
+            </ul>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-brand">
+
+          <ul class="contact-list">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Sarah</p>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/sarah-fontanezi-7b8901288/" class="footer-link" target="_blank">linkedin</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/sarinha1403" class="footer-link" target="_blank">GitHub</a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/bysarinha_perdida?" class="footer-link" target="_blank">Instagram</a>
+              </li>
+
+
+            </ul>
+
+          </ul>
+
+        </div>
+
+      </div>
     </div>
 
-    <div class="footer-brand">
+    <div class="footer-bottom">
+      <div class="container">
 
-      <ul class="contact-list">
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Joan</p>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/joan-lenon-barbosa-532058185/" class="footer-link" target="_blank">linkedin</a>
-          </li>
-
-          <li>
-            <a href="https://github.com/Joanlenon" class="footer-link" target="_blank">GitHub</a>
-          </li>
-
-          <li>
-            <a href="https://instagram.com/joanlenon" class="footer-link" target="_blank">Instagram</a>
-          </li>
+        <p class="copyright">
+          &copy; 2023 Portal RPG.
+        </p>
 
 
-        </ul>
-
-      </ul>
-
+      </div>
     </div>
 
-    <div class="footer-brand">
-
-      <ul class="contact-list">
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Sarah</p>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/sarah-fontanezi-7b8901288/" class="footer-link" target="_blank">linkedin</a>
-          </li>
-
-          <li>
-            <a href="https://github.com/sarinha1403" class="footer-link" target="_blank">GitHub</a>
-          </li>
-
-          <li>
-            <a href="https://instagram.com/bysarinha_perdida?" class="footer-link" target="_blank">Instagram</a>
-          </li>
-
-
-        </ul>
-
-      </ul>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="footer-bottom">
-  <div class="container">
-
-    <p class="copyright">
-      &copy; 2023 Portal RPG.
-    </p>
-
-
-  </div>
-</div>
-
-</footer>
+  </footer>
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up"></ion-icon>
