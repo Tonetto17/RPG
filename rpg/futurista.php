@@ -7,42 +7,40 @@ $idusuario = $_SESSION['idusuario'];
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REINOS PERDIDOS</title>
-    <link rel="icon" href="icones/Castelologo.png">
-    <link rel="stylesheet" href="css/estiloconteudo.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REINOS PERDIDOS</title>
+  <link rel="icon" href="icones/Castelologo.png">
+  <link rel="stylesheet" href="css/estiloconteudo.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
 
 
-    <header class="h-main" id="main-header">
-        <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
+  <header class="h-main" id="main-header">
+    <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
 
-        <ul class="Links">
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Alterar Usuário</a></li>
-            <li><a href="conteudo.php" class="active">Voltar</a></li>
-            <li><a href="login.php" class="active">Sair</a></li>
-            <?php
+    <ul class="Links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="usuarioalterausuario.php?idusuario=<?= $idusuario ?>" class="active">Alterar Usuário</a></li>
+      <li><a href="conteudo.php" class="active">Voltar</a></li>
+      <li><a href="login.php" class="active">Sair</a></li>
+      <?php
       #ABERTO O PHP PARA VALIDAR SE A SESSÃO DO USUARIO ESTÁ ABERTA
       # SE SESSÃO ABERTA, FECHA O PHP PARA USAR ELEMENTOS HTML
       if ($nomeusuario != null) {
       ?>
-            <!--USO DE ELEMENTO HTML COM PHP INTERNO-->
-            <a href="" class="active">
-                <li class="profile">Olá
-                    <?= strtoupper($nomeusuario) ?>
-            </a></li>
-            <?php
+        <!--USO DE ELEMENTO HTML COM PHP INTERNO-->
+        <a href="" class="active">
+          <li class="profile">Olá
+            <?= strtoupper($nomeusuario) ?>
+        </a></li>
+      <?php
         # ABERTURA DE OUTRO PHP PARA CASO FALSE
       } else {
         echo "<script>window.alert('USUARIO NÃO AUTENTICADO'); window.location.href='../login.php';</script>";
@@ -50,535 +48,513 @@ $idusuario = $_SESSION['idusuario'];
       # FIM DO PHP PARA CONTINUAR MEU HTML
       ?>
 
-        </ul>
-        <!--Links-->
+    </ul><!--Links-->
 
-        <div class="h-main">
-            <div class="bx bx-menu" id="menu-icon"></div>
-            <div id="darkmode"></div>
+    
+    <div class="h-main">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div id="darkmode"></div>
+      </div><!--h-main-->
+    <!--h-main-->
+
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home" aria-label="home" style="background-image: url('imagem/cidadefuturista.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Futurismo</p>
+
+            <h1 class="h1 hero-title">
+              Sua jornada <span class="span">Começa </span> aqui
+            </h1>
+
+            <p class="hero-text">
+              Conheça um pouco sobre o rpg
+            </p>
+
+          </div>
+
+
         </div>
-        <!--h-main-->
+      </section>
 
+      <section class="section brand" aria-label="brand">
+        <div class="container">
 
-    </header>
+          <ul class="has-scrollbar">
 
-    <main>
-        <article>
-            <section class="section hero" id="home" aria-label="home"
-                style="background-image: url('imagem/cidadefuturista.jpg')">
-                <div class="container">
+            <li class="brand-item">
+              <img src="imagem/error.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
-                    <div class="hero-content">
+            <li class="brand-item">
+              <img src="imagem/olho-bionico.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
-                        <p class="hero-subtitle">Futurismo</p>
+            <li class="brand-item">
+              <img src="imagem/qrcode.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
-                        <h1 class="h1 hero-title">
-                            Sua jornada <span class="span">Começa </span> aqui
-                        </h1>
+            <li class="brand-item">
+              <img src="imagem/robo.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
-                        <p class="hero-text">
-                            Conheça um pouco sobre o rpg
-                        </p>
+            <li class="brand-item">
+              <img src="imagem/virus.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
-                    </div>
+            <li class="brand-item">
+              <img src="imagem/humano.png" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
 
+          </ul>
 
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section class="section brand" aria-label="brand">
-                <div class="container">
+      </div>
 
-                    <ul class="has-scrollbar">
 
-                        <li class="brand-item">
-                            <img src="imagem/error.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+      <section class="section featured-game" id="features" aria-label="featured game">
+        <div class="container">
 
-                        <li class="brand-item">
-                            <img src="imagem/olho-bionico.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+          <h2 class="h2 section-title">
+            Escolha seu <span class="span">personagem:</span>
+          </h2>
 
-                        <li class="brand-item">
-                            <img src="imagem/qrcode.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+          <ul class="has-scrollbar">
 
-                        <li class="brand-item">
-                            <img src="imagem/robo.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
 
-                        <li class="brand-item">
-                            <img src="imagem/virus.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="imagem/HenryZaki.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
+                </figure>
 
-                        <li class="brand-item">
-                            <img src="imagem/humano.png" width="90" height="90" loading="lazy" alt="brand logo">
-                        </li>
+                <div class="card-content">
 
-                    </ul>
+                  <h3 class="h3">
+                    <a href="./imagem/HenryZaki.png" class="card-title" tabindex="-1">
+                      Personagem <span class="span">Henry Zaki</span>
+                    </a>
+                  </h3>
 
-                </div>
-            </section>
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
 
-            </div>
-
-
-            <section class="section featured-game" id="features" aria-label="featured game">
-                <div class="container">
-
-                    <h2 class="h2 section-title">
-                        Escolha seu <span class="span">personagem:</span>
-                    </h2>
-
-                    <ul class="has-scrollbar">
-
-                        <li class="scrollbar-item">
-                            <div class="featured-game-card">
-
-                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="imagem/HenryZaki.png" width="450" height="600" loading="lazy"
-                                        alt="Personagem" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="./imagem/HenryZaki.png" class="card-title" tabindex="-1">
-                                            Personagem <span class="span">Henry Zaki</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Herói</span>
-                                    </span>
-
-                                </div>
-
-                                <div class="card-content-overlay">
-
-                                    <div class="card-wrapper">
-                                        <a href="./imagem/HenryZaki.png" download="FUTURISMO" class="card-btn">
-                                            <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                                                class="card-icon">
-                                        </a>
-                                    </div>
-                                    <h3 class="h3">
-                                        <a href="./imagem/HenryZaki.png" class="card-title">
-                                            Baixe seu <span class="span">Personagem</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Herói</span>
-                                    </span>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="featured-game-card">
-
-                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="imagem/AelaPierce.png" width="450" height="600" loading="lazy"
-                                        alt="Personagem" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="./imagem//AelaPierce.png" class="card-title" tabindex="-1">
-                                            Personagem <span class="span">Aela Pierce</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Herói</span>
-                                    </span>
-
-                                </div>
-
-                                <div class="card-content-overlay">
-
-                                    <div class="card-wrapper">
-                                        <a href="./imagem/AelaPierce.png" download="FUTURISMO" class="card-btn">
-                                            <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                                                class="card-icon">
-                                        </a>
-                                    </div>
-                                    <h3 class="h3">
-                                        <a href="./imagem/AelaPierce.png" class="card-title">
-                                            Baixe seu <span class="span">Personagem</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Herói</span>
-                                    </span>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="featured-game-card">
-
-                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="imagem/DoranJordan.png" width="450" height="600" loading="lazy"
-                                        alt="Personagem" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="./imagem/DoranJordan.png" class="card-title" tabindex="-1">
-                                            Personagem<span class="span">Doran Jordan</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Vilão</span>
-                                    </span>
-
-                                </div>
-
-                                <div class="card-content-overlay">
-
-                                    <div class="card-wrapper">
-                                        <a href="./imagem/DoranJordan.png" download="FUTURISMO" class="card-btn">
-                                            <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                                                class="card-icon">
-                                        </a>
-                                    </div>
-                                    <h3 class="h3">
-                                        <a href="./imagem/DoranJordan.png" class="card-title">
-                                            Baixe seu <span class="span">Personagem</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Vilão</span>
-                                    </span>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="featured-game-card">
-
-                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="imagem/MackHadwell.png" width="450" height="600" loading="lazy"
-                                        alt="Personagem" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="./imagem/MackHadwell.png" class="card-title" tabindex="-1">
-                                            Personagem <span class="span">Mack Hadwell</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Vilão</span>
-                                    </span>
-
-                                </div>
-
-                                <div class="card-content-overlay">
-
-                                    <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                                        class="card-icon">
-                                    <div class="card-wrapper">
-                                        <a href="./imagem/MackHadwell.png" download="FUTURISMO" class="card-btn">
-                                            <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt=""
-                                                class="card-icon">
-                                        </a>
-                                    </div>
-
-                                    <h3 class="h3">
-                                        <a href="./imagem/MackHadwell.png" class="card-title">
-                                            Baixe seu <span class="span">Personagem</span>
-                                        </a>
-                                    </h3>
-
-                                    <span class="card-meta">
-                                        <ion-icon name="notifications"></ion-icon>
-
-                                        <span class="span">Vilão</span>
-                                    </span>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-            <section class="section shop" id="shop" aria-label="shop"
-                style="background-image: url('./assets/images/shop-bg.jpg')">
-                <div class="container">
-
-                    <h2 class="h2 section-title">
-                        Download <span class="span">necessários:</span>
-                    </h2>
-
-                    <p class="section-text">
-                        Faça o download para conseguir usar utilizar a ficha online
-                    </p>
-
-                    <ul class="has-scrollbar">
-
-                        <li class="scrollbar-item">
-                            <div class="shop-card">
-
-                                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                                    <img src="imagem/livro.jpg" width="300" height="260" loading="lazy" alt="Historia"
-                                        class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <a href="./historias/FUTURISMO.txt" class="card-badge skewBg">Historia</a>
-
-                                    <h3 class="h3">
-                                        <a href="./historias/FUTURISMO.txt" class="card-title">Baixe sua historia</a>
-                                    </h3>
-                                    <div class="card-wrapper">
-                                        <a href="./historias/FUTURISMO.txt" download="FUTURISMO.txt" class="card-btn">
-                                            <ion-icon name="download-outline"></ion-icon>
-                                        </a>
-                                    </div>
-
-                                </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="shop-card">
-                                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                                    <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa"
-                                        class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <a href="./mapas/futurista.zip" class="card-badge skewBg">Mapa</a>
-                                    <h3 class="h3">
-                                        <a href="./mapas/futurista.zip" class="card-title">Baixe os mapas</a>
-                                    </h3>
-                                    <div class="card-wrapper">
-                                        <a href="./mapas/futurista.zip" download="MAPA FUTURISMO" class="card-btn">
-                                            <ion-icon name="download-outline"></ion-icon>
-                                        </a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="shop-card">
-                                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                                    <img src="imagem/Ficha01.jpg" width="300" height="260" loading="lazy"
-                                        alt="Programa de fichas" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <a href="#" class="card-badge skewBg">Ficha online</a>
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Ficha online</a>
-                                    </h3>
-                                    <div class="card-wrapper">
-                                        <a href="#" download="FUTURISMO" class="card-btn">
-                                            <ion-icon name="download-outline"></ion-icon>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="shop-card">
-
-                                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
-                                    <img src="imagem/Ficha02.jpg" width="300" height="260" loading="lazy"
-                                        alt="Ficha fisica" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <a href="./fichas/fichas.zip" class="card-badge skewBg">Ficha fisica</a>
-
-                                    <h3 class="h3">
-                                        <a href="./fichas/fichas.zip" class="card-title">Ficha fisica</a>
-                                    </h3>
-
-                                    <div class="card-wrapper">
-                                        <a href="./fichas/fichas.zip" download="FUTURISMO" class="card-btn">
-                                            <ion-icon name="download-outline"></ion-icon>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-        </article>
-    </main>
-
-
-
-    <footer class="footer">
-
-        <div class="footer-top">
-            <div class="container">
-
-                <div class="footer-brand">
-
-                    <ul class="contact-list">
-
-                        <ul class="footer-list">
-
-                            <li>
-                                <p class="footer-list-title">Giovanna</p>
-                            </li>
-
-                            <li>
-                                <a href="https://www.linkedin.com/in/giovanna-correia-tonetto-536897255/"
-                                    class="footer-link" target="_blank">linkedin</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/Tonetto17" class="footer-link" target="_blank">GitHub</a>
-                            </li>
-
-                            <li>
-                                <a href="https://instagram.com/__tonetto__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
-                                    class="footer-link" target="_blank">Instagram</a>
-                            </li>
-
-
-                        </ul>
-
-                    </ul>
+                    <span class="span">Herói</span>
+                  </span>
 
                 </div>
 
-                <div class="footer-brand">
+                <div class="card-content-overlay">
 
-                    <ul class="contact-list">
+                  <div class="card-wrapper">
+                    <a href="./imagem/HenryZaki.png" download="FUTURISMO" class="card-btn">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
+                  <h3 class="h3">
+                    <a href="./imagem/HenryZaki.png" class="card-title">
+                      Baixe seu <span class="span">Personagem</span>
+                    </a>
+                  </h3>
 
-                        <ul class="footer-list">
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
 
-                            <li>
-                                <p class="footer-list-title">Joan</p>
-                            </li>
-
-                            <li>
-                                <a href="https://www.linkedin.com/in/joan-lenon-barbosa-532058185/" class="footer-link"
-                                    target="_blank">linkedin</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/Joanlenon" class="footer-link" target="_blank">GitHub</a>
-                            </li>
-
-                            <li>
-                                <a href="https://instagram.com/joanlenon" class="footer-link"
-                                    target="_blank">Instagram</a>
-                            </li>
-
-
-                        </ul>
-
-                    </ul>
+                    <span class="span">Herói</span>
+                  </span>
 
                 </div>
 
-                <div class="footer-brand">
+              </div>
+            </li>
 
-                    <ul class="contact-list">
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
 
-                        <ul class="footer-list">
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="imagem/AelaPierce.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
+                </figure>
 
-                            <li>
-                                <p class="footer-list-title">Sarah</p>
-                            </li>
+                <div class="card-content">
 
-                            <li>
-                                <a href="https://www.linkedin.com/in/sarah-fontanezi-7b8901288/" class="footer-link"
-                                    target="_blank">linkedin</a>
-                            </li>
+                  <h3 class="h3">
+                    <a href="./imagem//AelaPierce.png" class="card-title" tabindex="-1">
+                      Personagem <span class="span">Aela Pierce</span>
+                    </a>
+                  </h3>
 
-                            <li>
-                                <a href="https://github.com/sarinha1403" class="footer-link" target="_blank">GitHub</a>
-                            </li>
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
 
-                            <li>
-                                <a href="https://instagram.com/bysarinha_perdida?" class="footer-link"
-                                    target="_blank">Instagram</a>
-                            </li>
-
-
-                        </ul>
-
-                    </ul>
+                    <span class="span">Herói</span>
+                  </span>
 
                 </div>
 
-            </div>
+                <div class="card-content-overlay">
+
+                  <div class="card-wrapper">
+                    <a href="./imagem/AelaPierce.png" download="FUTURISMO" class="card-btn">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
+                  <h3 class="h3">
+                    <a href="./imagem/AelaPierce.png" class="card-title">
+                      Baixe seu <span class="span">Personagem</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Herói</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="imagem/DoranJordan.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./imagem/DoranJordan.png" class="card-title" tabindex="-1">
+                      Personagem<span class="span">Doran Jordan</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Vilão</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <div class="card-wrapper">
+                    <a href="./imagem/DoranJordan.png" download="FUTURISMO" class="card-btn">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
+                  <h3 class="h3">
+                    <a href="./imagem/DoranJordan.png" class="card-title">
+                      Baixe seu <span class="span">Personagem</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Vilão</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="imagem/MackHadwell.png" width="450" height="600" loading="lazy" alt="Personagem" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./imagem/MackHadwell.png" class="card-title" tabindex="-1">
+                      Personagem <span class="span">Mack Hadwell</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Vilão</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                  <div class="card-wrapper">
+                    <a href="./imagem/MackHadwell.png" download="FUTURISMO" class="card-btn">
+                      <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                    </a>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="./imagem/MackHadwell.png" class="card-title">
+                      Baixe seu <span class="span">Personagem</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Vilão</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <section class="section shop" id="shop" aria-label="shop" style="background-image: url('./assets/images/shop-bg.jpg')">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Download <span class="span">necessários:</span>
+          </h2>
+
+          <p class="section-text">
+            Faça o download para conseguir usar utilizar a ficha online
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="imagem/livro.jpg" width="300" height="260" loading="lazy" alt="Historia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./historias/FUTURISMO.txt" class="card-badge skewBg">Historia</a>
+
+                  <h3 class="h3">
+                    <a href="./historias/FUTURISMO.txt" class="card-title">Baixe sua historia</a>
+                  </h3>
+                  <div class="card-wrapper">
+                    <a href="./historias/FUTURISMO.txt" download="FUTURISMO.txt" class="card-btn">
+                      <ion-icon name="download-outline"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="imagem/Mapa.jpg" width="300" height="260" loading="lazy" alt="Mapa" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="./mapas/futurista.zip" class="card-badge skewBg">Mapa</a>
+                  <h3 class="h3">
+                    <a href="./mapas/futurista.zip" class="card-title">Baixe os mapas</a>
+                  </h3>
+                  <div class="card-wrapper">
+                    <a href="./mapas/futurista.zip" download="MAPA FUTURISMO" class="card-btn">
+                      <ion-icon name="download-outline"></ion-icon>
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="imagem/Ficha01.jpg" width="300" height="260" loading="lazy" alt="Programa de fichas" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="#" class="card-badge skewBg">Ficha online</a>
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ficha online</a>
+                  </h3>
+                  <div class="card-wrapper">
+                    <a href="#" download="FUTURISMO" class="card-btn">
+                      <ion-icon name="download-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="imagem/Ficha02.jpg" width="300" height="260" loading="lazy" alt="Ficha fisica" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="./fichas/fichas.zip" class="card-badge skewBg">Ficha fisica</a>
+
+                  <h3 class="h3">
+                    <a href="./fichas/fichas.zip" class="card-title">Ficha fisica</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <a href="./fichas/fichas.zip" download="FUTURISMO" class="card-btn">
+                      <ion-icon name="download-outline"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <ul class="contact-list">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Giovanna</p>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/giovanna-correia-tonetto-536897255/" class="footer-link" target="_blank">linkedin</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/Tonetto17" class="footer-link" target="_blank">GitHub</a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/__tonetto__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="footer-link" target="_blank">Instagram</a>
+              </li>
+
+
+            </ul>
+
+          </ul>
+
         </div>
 
-        <div class="footer-bottom">
-            <div class="container">
+        <div class="footer-brand">
 
-                <p class="copyright">
-                    &copy; 2023 Portal RPG.
-                </p>
+          <ul class="contact-list">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Joan</p>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/joan-lenon-barbosa-532058185/" class="footer-link" target="_blank">linkedin</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/Joanlenon" class="footer-link" target="_blank">GitHub</a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/joanlenon" class="footer-link" target="_blank">Instagram</a>
+              </li>
 
 
-            </div>
+            </ul>
+
+          </ul>
+
         </div>
 
-    </footer>
+        <div class="footer-brand">
+
+          <ul class="contact-list">
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="footer-list-title">Sarah</p>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/sarah-fontanezi-7b8901288/" class="footer-link" target="_blank">linkedin</a>
+              </li>
+
+              <li>
+                <a href="https://github.com/sarinha1403" class="footer-link" target="_blank">GitHub</a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/bysarinha_perdida?" class="footer-link" target="_blank">Instagram</a>
+              </li>
 
 
-    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="caret-up"></ion-icon>
-    </a>
+            </ul>
 
-    <script src="script/scriptconteudo.js" defer></script>
-    <script src="script/script.js" defer></script>
+          </ul>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Portal RPG.
+        </p>
+
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+  <script src="script/scriptconteudo.js" defer></script>
+  <script src="script/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 
 </body>
