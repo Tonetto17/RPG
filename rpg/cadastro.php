@@ -1,5 +1,4 @@
 <?php
-
 include("conectadb.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -7,24 +6,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Hash the password
-    $hashedPassword = password_hash($senha, PASSWORD_DEFAULT);
-
-    $sql = "SELECT COUNT(usu_id) FROM usuarios WHERE usu_nome = '$nome' AND usu_email = '$email'";
-    $retorno = mysqli_query($link, $sql);
-
-    while ($tbl = mysqli_fetch_array($retorno)) {
-        $cont = $tbl[0];
-    }
-
-    if ($cont == 1) {
-        echo "<script>window.alert('USUARIO JÁ EXISTE');</script>";
+    if (!preg_match("/^[a-zA-Z\s]+$/", $nome)) {
+        echo "<script>window.alert('Nome inválido. Use apenas letras e espaços.');</script>";
     } else {
-        $sql = "INSERT INTO usuarios (usu_nome, usu_email, usu_senha, usu_nivel, usu_ativo) VALUES ('$nome', '$email', '$hashedPassword', '0', 's')";
-        mysqli_query($link, $sql);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "<script>window.alert('Email inválido.');</script>";
+        } else {
+            $senha = trim($senha);
 
-        echo "<script>window.alert('USUARIO CADASTRADO');</script>";
-        echo "<script>window.location.href='login.php';</script>";
+            $sql = "SELECT COUNT(usu_id) FROM usuarios WHERE usu_nome = '$nome' AND usu_email = '$email'";
+            $retorno = mysqli_query($link, $sql);
+
+            while ($tbl = mysqli_fetch_array($retorno)) {
+                $cont = $tbl[0];
+            }
+
+            if ($cont == 1) {
+                echo "<script>window.alert('USUARIO JÁ EXISTE');</script>";
+            } else {
+            
+                $sql = "INSERT INTO usuarios (usu_nome, usu_email, usu_senha, usu_nivel, usu_ativo) VALUES ('$nome', '$email', '$senha', '0', 's')";
+                mysqli_query($link, $sql);
+
+                echo "<script>window.alert('USUARIO CADASTRADO');</script>";
+                echo "<script>window.location.href='login.php';</script>";
+            }
+        }
     }
 }
 ?>
@@ -58,15 +65,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h1 class="h1-login">Cadastro</h1>
                 <div class="textfield">
                     <label for="email">Nome:</label>
-                    <input type="text" name="nome" placeholder="NOME" require>
+                    <input type="text" name="nome" placeholder="NOME" required>
                 </div>
                 <div class="textfield">
                     <label for="email">Email:</label>
-                    <input type="text" name="email" placeholder="EMAIL" require>
+                    <input type="text" name="email" placeholder="EMAIL" required>
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha:</label>
-                    <input type="password" name="senha" placeholder="SENHA" require>
+                    <input type="password" name="senha" placeholder="SENHA" required>
                 </div>
                 <input class="btn-login" type="submit" name="cadastro" value="Cadastro">
                 <p>Já possui login? <a href="login.php">Faça login aqui</a></p>
