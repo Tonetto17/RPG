@@ -23,7 +23,7 @@ $idusuario = $_SESSION['idusuario'];
 <body id="top">
 
   <header class="h-main" id="main-header">
-    <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
+    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
    
      
 

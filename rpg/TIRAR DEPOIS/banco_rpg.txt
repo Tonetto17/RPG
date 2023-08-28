@@ -11,7 +11,6 @@ CREATE TABLE usuarios(
     usu_email VARCHAR(50) NOT NULL,
     usu_senha VARCHAR(50) NOT NULL,
     usu_nivel CHAR(1) NOT NULL,
-    usu_token VARCHAR(50),
     usu_ativo CHAR(1),
     usu_token VARCHAR(50)
     );
