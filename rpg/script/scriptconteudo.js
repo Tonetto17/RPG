@@ -20,6 +20,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
 
 
 
+
 /**
  * search toggle
  */

@@ -19,6 +19,8 @@
 }
 
  
+ 
+
 .active {
     font-weight: bold;
 }
@@ -182,7 +184,7 @@ header {
     
 }
 .dark-header {
-    background-color: rgba(34, 31, 31, 0.8); /* Cor de fundo escura */
+    background-color: #dda142; /* Cor de fundo escura */
     transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 

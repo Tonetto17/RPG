@@ -31,7 +31,7 @@ $idusuario = $_SESSION['idusuario'];
 
 
   <header class="h-main" id="main-header">
-    <a href="#" class="logo"><i class='bx bx-dice-6 bx-flashing'></i>REINOS PERDIDOS</a>
+    <a href="#" class="logo"><i class='bx bxs-castle bx-flashing'></i>REINOS PERDIDOS</a>
 
     <ul class="Links">
       <li><a href="index.html" class="active">Inicio</a></li>
@@ -58,10 +58,11 @@ $idusuario = $_SESSION['idusuario'];
 
     </ul><!--Links-->
 
-    <div class="h-main" id="menu-bar">
-
-      <div id="darkmode"></div>
-    </div><!--h-main-->
+   
+    <div class="h-main">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div id="darkmode"></div>
+      </div><!--h-main-->
 
   </header>
   <!--Cabeçalho-->
