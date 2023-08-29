@@ -294,7 +294,7 @@ $idusuario = $_SESSION['idusuario'];
 
                 <div class="card-content-overlay">
 
-                  <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
+                 
                   <div class="card-wrapper">
                     <a href="./imagem/MackHadwell.png" download="FUTURISMO" class="card-btn">
                       <img src="imagem/baixar.png" width="36" height="61" loading="lazy" alt="" class="card-icon">
