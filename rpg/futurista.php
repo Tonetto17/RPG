@@ -393,7 +393,7 @@ $idusuario = $_SESSION['idusuario'];
                     <a href="#" class="card-title">Ficha online</a>
                   </h3>
                   <div class="card-wrapper">
-                    <a href="#" download="FUTURISMO" class="card-btn">
+                    <a href="./Arquivos/Reinos_perdidos.zip" download="Reinos_Perdidos" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>

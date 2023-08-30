@@ -404,7 +404,7 @@ $idusuario = $_SESSION['idusuario'];
                   </h3>
 
                   <div class="card-wrapper">
-                    <a href="fichas.zip" download="fischas.zip" class="card-btn">
+                    <a href="./Arquivos/Reinos_perdidos.zip" download="Reinos_Perdidos" class="card-btn">
                       <ion-icon name="download-outline"></ion-icon>
                     </a>
                   </div>
